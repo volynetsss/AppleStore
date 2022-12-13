@@ -132,7 +132,7 @@
                         let positionParameters = location.pathname.indexOf('?');
                         let url = location.pathname.substring(positionParameters,location.pathname.length);
                         let newURL = url + '?';
-                        newURL += "&page={{isset($_GET['page']) ? $_GET['page'] : 1}}"+'orderBy=' + orderBy; // http://127.0.0.1:8001/phones?orderBy=name-z-a
+                        newURL += "&page={{isset($_GET['page']) ? $_GET['page'] : 1}}"+'orderBy=' + orderBy; // http://127.0.0.1:8001/macbooks?orderBy=price-low-high
                         history.pushState({}, '', newURL);
 
                         $('.product_pagination a').each(function(index, value){
